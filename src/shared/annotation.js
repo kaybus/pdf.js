@@ -715,6 +715,15 @@ var LinkAnnotation = (function LinkAnnotationClosure() {
       element.href = this.data.url || '';
       element.target = '_blank';
 
+      /* Trap the click on any url which the pdf.js sees and let the Kaybus
+       application handle it. */
+       if(top.Kaybus) {
+         element.onclick = function(e) {
+          top.Kaybus.Utils.pdfLinkClicksHandler(this, e);
+        }.bind(element);
+      }
+
+
       return element;
     }
   });
