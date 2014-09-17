@@ -226,6 +226,7 @@ var AnnotationUtils = (function AnnotationUtilsClosure() {
 
     var link = document.createElement('a');
     link.href = link.title = item.url || '';
+    link.target = '_blank';
 
     container.appendChild(link);
 

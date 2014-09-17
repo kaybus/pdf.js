@@ -37,6 +37,8 @@ var PDFFindBar = (function PDFFindBarClosure() {
     this.findNextButton = options.findNextButton || null;
     this.findController = options.findController || null;
 
+    options.highlightAllCheckbox.checked=true; // MV-259
+
     if (this.findController === null) {
       throw new Error('PDFFindBar cannot be used without a ' +
                       'PDFFindController instance.');

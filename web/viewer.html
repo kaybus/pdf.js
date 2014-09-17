@@ -93,7 +93,7 @@ http://sourceforge.net/adobe/cmap/wiki/License/
 <!--#else-->
 <!--#include viewer-snippet-minified.html-->
 <!--#endif-->
-
+    <script src="../../pdfjs-highlight.js"></script><!-- KB-4541: upgrade pdfjs fork -->
   </head>
 
   <body tabindex="1">
@@ -149,7 +149,7 @@ http://sourceforge.net/adobe/cmap/wiki/License/
               <span data-l10n-id="presentation_mode_label">Presentation Mode</span>
             </button>
 
-            <button id="secondaryOpenFile" class="secondaryToolbarButton openFile visibleLargeView" title="Open File" tabindex="52" data-l10n-id="open_file">
+            <button id="secondaryOpenFile" class="secondaryToolbarButton openFile visibleLargeView hidden" title="Open File" tabindex="52" data-l10n-id="open_file">
               <span data-l10n-id="open_file_label">Open</span>
             </button>
 
@@ -157,7 +157,7 @@ http://sourceforge.net/adobe/cmap/wiki/License/
               <span data-l10n-id="print_label">Print</span>
             </button>
 
-            <button id="secondaryDownload" class="secondaryToolbarButton download visibleMediumView" title="Download" tabindex="54" data-l10n-id="download">
+            <button id="secondaryDownload" class="secondaryToolbarButton download visibleMediumView hidden" title="Download" tabindex="54" data-l10n-id="download">
               <span data-l10n-id="download_label">Download</span>
             </button>
 
@@ -183,9 +183,9 @@ http://sourceforge.net/adobe/cmap/wiki/License/
               <span data-l10n-id="page_rotate_ccw_label">Rotate Counterclockwise</span>
             </button>
 
-            <div class="horizontalToolbarSeparator"></div>
+            <div class="horizontalToolbarSeparator hidden"></div>
 
-            <button id="toggleHandTool" class="secondaryToolbarButton handTool" title="Enable hand tool" tabindex="60" data-l10n-id="hand_tool_enable">
+            <button id="toggleHandTool" class="secondaryToolbarButton handTool hidden" title="Enable hand tool" tabindex="60" data-l10n-id="hand_tool_enable">
               <span data-l10n-id="hand_tool_enable_label">Enable hand tool</span>
             </button>
             
@@ -226,7 +226,7 @@ http://sourceforge.net/adobe/cmap/wiki/License/
                   <span data-l10n-id="presentation_mode_label">Presentation Mode</span>
                 </button>
 
-                <button id="openFile" class="toolbarButton openFile hiddenLargeView" title="Open File" tabindex="32" data-l10n-id="open_file">
+                <button id="openFile" class="toolbarButton openFile hiddenLargeView hidden" title="Open File" tabindex="32" data-l10n-id="open_file">
                   <span data-l10n-id="open_file_label">Open</span>
                 </button>
 
@@ -234,7 +234,7 @@ http://sourceforge.net/adobe/cmap/wiki/License/
                   <span data-l10n-id="print_label">Print</span>
                 </button>
 
-                <button id="download" class="toolbarButton download hiddenMediumView" title="Download" tabindex="34" data-l10n-id="download">
+                <button id="download" class="toolbarButton download hiddenMediumView hidden" title="Download" tabindex="34" data-l10n-id="download">
                   <span data-l10n-id="download_label">Download</span>
                 </button>
                 <!-- <div class="toolbarButtonSpacer"></div> -->

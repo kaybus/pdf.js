@@ -106,7 +106,7 @@ var PDFViewerApplication = {
   mouseScrollDelta: 0,
   preferenceSidebarViewOnLoad: SidebarView.NONE,
   preferencePdfBugEnabled: false,
-  isViewerEmbedded: (window.parent !== window),
+  isViewerEmbedded: false,
   url: '',
 
   // called once when the document is loaded
